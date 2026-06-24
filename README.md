@@ -67,6 +67,12 @@ graph LR
 | **Instance2022** | NCCT / ICH Mask | 100 | Huấn luyện ngoài cho ICH Teacher |
 | **Seg-CQ500** | NCCT / ICH Mask | 51 | Huấn luyện ngoài cho ICH Teacher |
 
+> [!IMPORTANT]
+> **Tải xuống dữ liệu thực nghiệm:**
+> Do kích thước dữ liệu ảnh y tế rất lớn, bộ dữ liệu đầy đủ không được lưu trữ trực tiếp trên kho mã nguồn GitHub này.
+> Bạn vui lòng tải dữ liệu tại liên kết Google Drive sau: **[Google Drive Dataset Folder](https://drive.google.com/drive/folders/1k-0-4uVV3TMkiHbsonivTGEqQ1Ihc73L?usp=sharing)**.
+> Sau khi tải về, hãy giải nén và đặt các thư mục con tương ứng vào thư mục trống `/data/` của dự án để chạy thực nghiệm.
+
 ---
 
 ##  Kết quả định lượng
