@@ -110,36 +110,25 @@ graph LR
 
 Chi tiết mã nguồn thực nghiệm thực tế được lưu trữ tại thư mục [/notebook](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook):
 
-### 1. Các baseline 2.5D & Dòng mô hình 3DFF-Net
-* [02-4-3dff-net-iph-phe-25d-segmentation-racda5a49ad.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-4-3dff-net-iph-phe-25d-segmentation-racda5a49ad.ipynb): Kiến trúc 3DFF-Net 2.5D baseline cho IPH + PHE.
-* [02-5-lite-3dff-iph-phe-25d-segmentation-refined-ps.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-5-lite-3dff-iph-phe-25d-segmentation-refined-ps.ipynb): Phiên bản thu gọn (Lite) của 3DFF-Net.
-* [02-6-balanced-3dff-iph-phe-25d-segmentation-refine.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-6-balanced-3dff-iph-phe-25d-segmentation-refine.ipynb): Cải tiến cân bằng mẫu cho 3DFF-Net.
-* [02-7-phe-pretrained-3dff-iph-phe-refined-pseudo.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-7-phe-pretrained-3dff-iph-phe-refined-pseudo.ipynb): 3DFF-Net pretrain kết hợp pseudo labels.
-* [02_10_pese_guided_3dff_iph_phe_25d_segmentation_local.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_10_pese_guided_3dff_iph_phe_25d_segmentation_local.ipynb): Tích hợp prior dẫn đường từ lát cắt kề cận (PESE-guided).
-* [02_10b_pese_guided_3dff_iph_phe_25d_segmentation_oldsplit_local.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_10b_pese_guided_3dff_iph_phe_25d_segmentation_oldsplit_local.ipynb): PESE-guided chạy local trên phân chia split cũ (48/48/24).
-* [02_11_enhanced_pese_guided_3dff_iph_phe_25d_segmentation_local.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_11_enhanced_pese_guided_3dff_iph_phe_25d_segmentation_local.ipynb): Phiên bản nâng cao của PESE-guided 3DFF-Net.
-* [option_0d_phe_only_25d_detection.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/option_0d_phe_only_25d_detection.ipynb): Thử nghiệm bài toán phát hiện (detection) 2.5D.
-* [option_0s_phe_only_25d_fusion_fpn_segmentation.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/option_0s_phe_only_25d_fusion_fpn_segmentation.ipynb): Phân đoạn 2.5D kết hợp FPN fusion.
+### 1. Nhóm Baseline PHE-only (Kaggle & Local)
+* [02_12_nnunetv2_phe_sich_baseline_local.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_12_nnunetv2_phe_sich_baseline_local.ipynb): Huấn luyện mô hình nnU-Net v2 baseline phân đoạn PHE chạy local.
+* [02-16b-kaggle-mednext-s-phe-only-stronger-baseline.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-16b-kaggle-mednext-s-phe-only-stronger-baseline.ipynb): Huấn luyện backbone MedNeXt-S làm baseline trên Kaggle.
+* [02-16c-kaggle-mednext-m-phe-only-stronger-baseline.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-16c-kaggle-mednext-m-phe-only-stronger-baseline.ipynb): Huấn luyện backbone MedNeXt-M làm baseline trên Kaggle.
+* [02-17-kaggle-swinunetr-phe-only-faiab9f7281b9.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-17-kaggle-swinunetr-phe-only-faiab9f7281b9.ipynb): Huấn luyện backbone SwinUNETR Transformer trên Kaggle.
+* [02-18-kaggle-monai-dynunet-phe-only-fair-baseline.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-18-kaggle-monai-dynunet-phe-only-fair-baseline.ipynb): Huấn luyện backbone DynUNet trên Kaggle.
+* [02-20-kaggle-residualunet3d-phe-only-fai71c3d4e39e.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-20-kaggle-residualunet3d-phe-only-fai71c3d4e39e.ipynb): Huấn luyện backbone ResidualUNet3D trên Kaggle.
 
-### 2. Thực nghiệm nnU-Net Baseline (Kaggle & Local)
-* [02-12b-kaggle-nnunet-phe-only-120epochs.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-12b-kaggle-nnunet-phe-only-120epochs.ipynb): Huấn luyện nnU-Net PHE-only 120 epochs trên Kaggle.
-* [02-15-kaggle-nnunet-phe-only-baseline6c8c5e4146.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-15-kaggle-nnunet-phe-only-baseline6c8c5e4146.ipynb): Run baseline nnU-Net trên Kaggle.
-* [02-16-kaggle-mednext-s-phe-only-baseline.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02-16-kaggle-mednext-s-phe-only-baseline.ipynb): Chạy baseline MedNeXt-S PHE-only trên Kaggle.
-* [02_12b_kaggle_nnunet_phe_brain_subdural_skullstrip_baseline.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_12b_kaggle_nnunet_phe_brain_subdural_skullstrip_baseline.ipynb): Thử nghiệm nnU-Net kết hợp lọc sọ não (skull strip) trên Kaggle.
-* [02_12c_kaggle_nnunet_phe_only_19c_split.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_12c_kaggle_nnunet_phe_only_19c_split.ipynb): Huấn luyện nnU-Net với tập split 19 ca trên Kaggle.
-* [02_12c_nnunet_phe_only_19c_split_local.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_12c_nnunet_phe_only_19c_split_local.ipynb): Huấn luyện nnU-Net với tập split 19 ca chạy local.
+### 2. Nhóm Huấn luyện ICH Teacher (Dữ liệu ngoài)
+* [02_13_nnunet_ich_teacher_external_data.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_13_nnunet_ich_teacher_external_data.ipynb): Huấn luyện mô hình ICH Teacher trên các bộ dữ liệu ngoài (Instance2022 + Seg-CQ500).
+* [02_13b_nnunet_ich_teacher_external_data_improved.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_13b_nnunet_ich_teacher_external_data_improved.ipynb): Phiên bản nâng cao của mô hình ICH Teacher.
 
-### 3. Chuyển giao tri thức & Tiên nghiệm không gian (Prior Transfer)
-* [02_14c_nnunet_phe_ich_teacher_peri_ring_prior.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_14c_nnunet_phe_ich_teacher_peri_ring_prior.ipynb): nnU-Net kết hợp tiên nghiệm không gian dạng vành khuyên (Ring Prior).
-* [02_19c_nnunet_phe_pseudo_ich_prior_control_resplit_hardval.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_19c_nnunet_phe_pseudo_ich_prior_control_resplit_hardval.ipynb): Nhánh đối chứng Pseudo-prior từ CT gốc trên tập validation khó.
-* [03_1.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/03_1.ipynb) & [03_2.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/03_2.ipynb): Phân tích hiệu quả chuyển giao tri thức tiên nghiệm và đánh giá metrics.
-* [04_option4_ich_prior_transfer_phe_student.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/04_option4_ich_prior_transfer_phe_student.ipynb): Thực nghiệm transfer tri thức sang mô hình Student.
-* [05_option5_ring_prior_warmstart_phe_student.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/05_option5_ring_prior_warmstart_phe_student.ipynb): Khởi động ấm (Warmstart) mô hình student với Ring Prior.
+### 3. Nhóm Chuyển giao tiên nghiệm không gian (Teacher-Prior)
+* [02_14_nnunet_phe_ich_teacher_prior.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_14_nnunet_phe_ich_teacher_prior.ipynb): Tích hợp tiên nghiệm xuất huyết dạng mặt nạ nhị phân (Binary ICH prior).
+* [02_14b_nnunet_phe_ich_teacher_prior_soft_spatial.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_14b_nnunet_phe_ich_teacher_prior_soft_spatial.ipynb): Tích hợp bản đồ xác suất mềm (Soft spatial prior) kết hợp biến đổi khoảng cách.
 
-### 4. Đánh giá dữ liệu & Pipeline hỗ trợ
-* [Seg_CQ500_EDA.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/Seg_CQ500_EDA.ipynb): Phân tích khám phá dữ liệu bộ Seg-CQ500.
-* [phe_sich_seg_cq500_research_pipeline.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/phe_sich_seg_cq500_research_pipeline.ipynb): Pipeline liên kết nghiên cứu Seg-CQ500.
-* [q1_phe_ich_prior_transfer_pipeline.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/q1_phe_ich_prior_transfer_pipeline.ipynb): Thiết lập khung pipeline chuyển giao tri thức tiên nghiệm chính.
+### 4. Nhóm Đối chứng Heuristic (Pseudo-Prior Control)
+* [02_19_nnunet_phe_pseudo_ich_prior_control.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_19_nnunet_phe_pseudo_ich_prior_control.ipynb): Tích hợp Pseudo-prior được tạo trực tiếp từ ảnh CT gốc bằng ngưỡng vật lý.
+* [02_19b_nnunet_phe_pseudo_ich_prior_control_brainwin_skullstrip.ipynb](file:///d:/Thuy_Loi/Nam_3/CT_xuathuyetnao/PHE-ICH-Segmentation-CT/notebook/02_19b_nnunet_phe_pseudo_ich_prior_control_brainwin_skullstrip.ipynb): Phiên bản nâng cao của Pseudo-prior kết hợp lọc cửa sổ não (Brain windowing) và lọc sọ (Skull stripping).
 
 ---
 
